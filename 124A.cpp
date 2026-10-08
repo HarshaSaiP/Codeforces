@@ -1,5 +1,7 @@
 //https://codeforces.com/problemset/problem/124/A
 
+//https://codeforces.com/problemset/problem/124/A
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -7,10 +9,7 @@ int main() {
     int n, a, b;
     cin >> n >> a >> b;
 
-    int low = max(1, n - b);
-    int high = min(n, a);
-
-    cout << max(0, high - low + 1);
+    cout << n - max(a + 1, n - b) + 1;
 
     return 0;
 }
